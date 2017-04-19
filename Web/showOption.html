@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title> SEARCH BLOGS</title>
+        <style>
+                   body{background-color: #000;
+    margin:20;
+    padding: 0;
+    font-size: 23px;
+    color: #ffc119;
+    
+    }
+                   
+       a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    margin-left: 500px; 
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+a:hover, a:active {
+    background-color: red;
+}             
+   #a1{color:#000;
+       margin-top:0; margin-left:0;
+       background-color:#000;
+       color:#ffc119;
+   }             
+   #a1:hover, #a1:active {color:#fff;}
+   .tb{margin-left:500px;}     
+   
+               </style>
+    </head>
+    
+    <body>
+        
+        <script>
+function addTextBoxData(e){
+    e.href = e.href + "?textbox=" + document.getElementById('txt1').value;
+}
+function addTextBoxData2(e){
+    e.href = e.href + "?textbox1=" + document.getElementById('txt2').value;
+}
+</script>
+
+<a id='a1' href="Home.jsp"> <b> HOME </b> </a> <br><br><br><br>
+
+
+        <a href="topicblogs.html"> <b> SEARCH BY TOPIC </b> </a> <br> <br><br><br>
+        <input class="tb" type='text' id='txt1' placeholder="author"> <br><br>
+        <a href="authorshow.jsp" onclick="addTextBoxData(this)"> <b>SEARCH BY AUTHOR</b> </a> <br> <br><br><br>
+        <input class="tb" type='text' id='txt2' placeholder="keyword"><br><br>
+        <a href="keywordshow.jsp" onclick="addTextBoxData2(this)"> <b>SEARCH BY KEYWORD</b> </a><br><br><br><br>
+        
+        
+        
+    </body>
+    
+    
+</html>
