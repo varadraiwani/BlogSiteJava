@@ -1,2 +1,2 @@
 # BlogSiteJava
-A mini blogging site using JSP and Servlets
+A mini blogging site using JSP and Servlets. The user has an option to sign up and then log in. An HTTP session is created during this. The user can view his profile details and create a new blog on any one of the various topics provided. Already written blogs can be viewed according to their topics, authors or a keyword in them. There is also an option to send a message to an author. This message is displayed on opening the message window. On logging out, the httpSession is destroyed.
